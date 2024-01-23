@@ -14,132 +14,136 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Menu } from '@mui/material';
 
-const pages = ['Home', 'About', 'First Periods', 'Nearby Find', 'MenstruPedia', 'Mensa', ];
+const pages = ['Home', 'About', 'First Periods', 'Nearby Find', 'MenstruPedia', 'Mensa',];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
-  
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleCloseNavMenu = (page) => {
-    setAnchorElNav(null);
-    if (page === 'Home') {
-     
-    } else if (page === 'MenstruPedia') {
-      
-    } else if (page === 'Mensa') {
-      
-    }
-  };
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
+    const handleOpenUserMenu = (event) => {
+        setAnchorElUser(event.currentTarget);
+    };
 
-  const handleCloseUserMenu = (page) => {
-    setAnchorElUser(null);
-  };
+    const handleCloseNavMenu = (page) => {
+        setAnchorElNav(null);
+        if (page === 'Home') {
 
-  return (
-   
-    <AppBar  position="static"  sx={{ backgroundColor: '#FFD8DF'  }}>
-      <Container  maxWidth="lg">
-        <Toolbar disableGutters>
-          
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'Secendery',
-              textDecoration: 'none',
+        } else if (page === 'MenstruPedia') {
+
+        } else if (page === 'Mensa') {
+
+        }
+    };
+
+    const handleCloseUserMenu = (page) => {
+        setAnchorElUser(null);
+    };
+
+    return (
+
+        <AppBar position="static" sx={{ backgroundColor: '#FFD8DF' }}>
+            <Container maxWidth="lg">
+                <Toolbar disableGutters>
+
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        href="/"
+                        sx={{
+                            mr: 2,
+                            display: { xs: 'none', md: 'flex' },
+                            fontFamily: "Pacifico, cursive",
+                    fontWeight: 400,
+                    
+                    letterSpacing: '.3rem',
+                    color: 'Secendery',
+                    textDecoration: 'none',
+                    padding:1.5,
             }}
           >
-            HormoneHarmony
-          </Typography>
+                    Hormone Harmony
+                </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="black"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={() => handleCloseNavMenu()}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-                color: 'black',
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
-                  <Typography textAlign="center" color='black' sx={{color: 'black'}}>{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-         
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'Secendery',
-              textDecoration: 'none',
-            }}
-          >
-            HormoneHarmony
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color: 'black' }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={() => handleCloseNavMenu(page)}
-                sx={{ my: 2, color: 'Secendery', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
+                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                    <IconButton
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={handleOpenNavMenu}
+                        color="black"
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Menu
+                        id="menu-appbar"
+                        anchorEl={anchorElNav}
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+                        }}
+                        keepMounted
+                        transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'left',
+                        }}
+                        open={Boolean(anchorElNav)}
+                        onClose={() => handleCloseNavMenu()}
+                        sx={{
+                            display: { xs: 'block', md: 'none' },
+                            color: 'black',
+                        }}
+                    >
+                        {pages.map((page) => (
+                            <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+                                <Typography textAlign="center" color='black' sx={{ color: 'black' }}>{page}</Typography>
+                            </MenuItem>
+                        ))}
+                    </Menu>
+                </Box>
 
-          
-        </Toolbar>
-      </Container>
-    </AppBar>
+                <Typography
+                    variant="h5"
+                    noWrap
+                    component="a"
+                    href="/"
+                    sx={{
+                        mr: 2,
+                        display: { xs: 'flex', md: 'none' },
+                        flexGrow: 1,
+                        fontFamily: "Pacifico, cursive",
+                        
+                        
+                        letterSpacing: '.2rem',
+                        color: 'Secendery',
+                        textDecoration: 'none',
+                        padding: 1.5,
+                    }}
+                >
+                    Hormone Harmony
+                </Typography>
+                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color: 'black' }}>
+                    {pages.map((page) => (
+                        <Button
+                            key={page}
+                            onClick={() => handleCloseNavMenu(page)}
+                            sx={{ my: 2, color: 'Secendery', display: 'block' }}
+                        >
+                            {page}
+                        </Button>
+                    ))}
+                </Box>
+
+
+            </Toolbar>
+        </Container>
+    </AppBar >
 
   );
 }
