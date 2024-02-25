@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
+import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
@@ -18,7 +18,7 @@ const pages = ['Home', 'About', 'First Periods', 'Nearby Find', 'MenstruPedia', 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
-
+ const navigate= useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -32,9 +32,9 @@ function NavBar() {
     const handleCloseNavMenu = (page) => {
         setAnchorElNav(null);
         if (page === 'Home') {
-
-        } else if (page === 'MenstruPedia') {
-
+            navigate('/');
+        } else if (page === 'First Periods') {
+            navigate('/first-periods')
         } else if (page === 'Mensa') {
 
         }
