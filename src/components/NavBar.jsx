@@ -18,7 +18,7 @@ import { getAuth } from "firebase/auth";
 import firebase from 'firebase/compat/app';
 import * as firebaseui from 'firebaseui'
 import 'firebaseui/dist/firebaseui.css'
-const pages = ['Home', 'About', 'First Periods', 'Nearby Find', 'MenstruPedia', 'Mensa',];
+const pages = ['Home', 'First Periods', 'Maitri AI', 'MenstruPedia', 'Mensa AI',];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -73,9 +73,13 @@ var uiConfig = {
             navigate('/first-periods')
         } else if (page === 'MenstruPedia') {
             navigate('/menstrupedia')
-        } else if (page === 'Mensa') {
+        } else if (page === 'Mensa AI') {
             
             window.open('https://mensa-ai.streamlit.app/', '_blank');
+        }
+        else if (page === 'Maitri AI') {
+            
+            window.open('https://maitri-ai.streamlit.app/', '_blank');
         }
     };
 
