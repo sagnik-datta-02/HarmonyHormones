@@ -89,10 +89,10 @@ const HeroSection = () => {
              paddingBottom: 1,
              borderRadius: 5,
              
-             border:'50px #ffbf00',
+            
              justifyContent: 'flex-start',
              alignItems: 'flex-start',
-             gap: 15,
+             gap: 20,
              display: 'inline-flex',
              color: '#242424',
            }}
@@ -101,7 +101,8 @@ const HeroSection = () => {
             Mensa
           </Button>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
+
         <img
           style={{ width: '100%', height: '100%' }}
           src="/img2-removebg-preview.png"

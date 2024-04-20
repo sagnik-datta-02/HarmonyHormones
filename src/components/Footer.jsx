@@ -41,8 +41,8 @@ export default function Footer() {
               wordWrap: 'break-word'
             }}>Services</Typography>
             <Typography component="div" style={{ padding: '20px', display: 'flex', flexDirection: 'column', color: '#242424', fontSize: 20, fontFamily: 'Jost, sans-serif', fontWeight: '400', letterSpacing: 0.40, wordWrap: 'break-word' }}>
-              <Link href='https://mensa-ai.streamlit.app/'   underline="hover" >Mensa Bot</Link>
-              <Link href='/menstrupedia' underline="hover" >Menstrupedia</Link>
+              <Link href='https://mensa-ai.streamlit.app/' target="_blank" underline="hover" >Mensa Bot</Link>
+              <Link  href='/menstrupedia' underline="hover" >Menstrupedia</Link>
             </Typography>
           </Grid>
         </Grid>
