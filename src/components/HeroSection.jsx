@@ -4,14 +4,15 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
-  
+  const navigate= useNavigate();
 
   const handleClick= () =>{
-    
+    navigate('/menstrupedia');
   }
   const handleClickPage= () =>{
+    window.open('https://mensa-ai.streamlit.app/', '_blank');
    
   }
   return (
@@ -49,7 +50,7 @@ const HeroSection = () => {
               alignContent:'center'
             }}
           >
-           Get ready to empower your well-being with Harmony Hormones—a vibrant global haven for women's health, available in a whopping 102 languages! Dive into enlightening articles, effortlessly locate nearby shops with our "Nearby Find," and have a chat with Mensa, our witty AI companion. Break the taboos with Menstrupedia and become part of a lively community dedicated to your holistic well-being. Harmony Hormones: Where guidance meets excitement, support meets fun, and well-being is the ultimate adventure! Your guide to a harmonious and empowered life starts here. 🌺🚀
+           Get ready to empower your well-being with Harmony Hormones—a vibrant global haven for women's health! Dive into enlightening articles, effortlessly locate nearby shops with our "Nearby Find," and have a chat with Mensa, our witty AI companion. Break the taboos with Menstrupedia and become part of a lively community dedicated to your holistic well-being. Harmony Hormones: Where guidance meets excitement, support meets fun, and well-being is the ultimate adventure! Your guide to a harmonious and empowered life starts here. 🌺🚀
           </Typography>
         
         
