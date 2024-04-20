@@ -110,7 +110,7 @@ var uiConfig = {
                     padding:1.5,
             }}
           >
-                    Hormone Harmony
+                    Harmony Hormones
                 </Typography>
 
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -169,7 +169,7 @@ var uiConfig = {
                         padding: 1.5,
                     }}
                 >
-                    Hormone Harmony
+                    Harmony Hormones
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color: 'black' }}>
                     {pages.map((page) => (
