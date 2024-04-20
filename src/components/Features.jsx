@@ -20,8 +20,8 @@ const items = [
     link:'https://mensa-ai.streamlit.app/',
     description:
       'This is Mensa- an AI based Menstrual Health Q&A bot to answer all queries regarding the topic considered as taboo in the society.',
-    imageLight: 'url("/src/assets/Mensa.jpeg")',
-    imageDark: 'url("https://i.postimg.cc/HW5jdm9V/Whats-App-Image-2024-04-20-at-12-31-00-PM-1.jpg")',
+    imageLight: 'url("https://i.postimg.cc/xTVsTHhL/Mensa.jpg")',
+    
   },
   {
     icon: <MedicalInformationIcon />,
@@ -29,8 +29,8 @@ const items = [
     link:'https://maitri-ai.streamlit.app/',
     description:
       'This is an AI based Personalized Menstrual Health Care Recommender to suggest a careplan and answer any queries a women can face during the Menstrual Cycle',
-    imageLight: 'url("src/assets/maitri.png")',
-    imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
+    imageLight: 'url("https://i.postimg.cc/kXyd7jVr/maitri.png")',
+    
   },
   {
     icon: <MedicationLiquidIcon/>,
@@ -38,8 +38,8 @@ const items = [
     link:'/menstrupedia',
     description:
       'This is the the Place to know about various Health Related lastest issues of Women provided by ODPHP , USA ',
-    imageLight: 'url("src/assets/menstrupedia.png")',
-    imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+    imageLight: 'url("https://i.postimg.cc/kgfwcH4y/Menstrupedia.png")',
+    
   },
 ];
 
