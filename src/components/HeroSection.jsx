@@ -98,7 +98,7 @@ const HeroSection = () => {
            }}
            onClick={handleClickPage}
           >
-            Mensa
+            Mensa AI
           </Button>
             </Grid>
             <Grid item xs={12} sm={6} md={4} sx={{padding:1}}>
