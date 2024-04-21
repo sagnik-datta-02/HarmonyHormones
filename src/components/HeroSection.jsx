@@ -35,7 +35,7 @@ const HeroSection = () => {
              wordWrap: 'break-word',
            }}
           >
-            Hormone Harmony<br />#It's Just Period<br />
+            Harmony Hormones<br />#It's Just Period<br />
           </Typography>
           <Typography
             variant="body1"

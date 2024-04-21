@@ -16,19 +16,19 @@ import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 const items = [
   {
     icon: <HealthAndSafetyIcon />,
-    title: 'Mensa',
+    title: 'Mensa AI',
     link:'https://mensa-ai.streamlit.app/',
     description:
-      'This is Mensa- an AI based Menstrual Health Q&A bot to answer all queries regarding the topic considered as taboo in the society.',
+      'This is Mensa - an AI based Menstrual Health Q&A bot to answer all queries regarding the topic considered as taboo in the society.',
     imageLight: 'url("https://i.postimg.cc/xTVsTHhL/Mensa.jpg")',
     
   },
   {
     icon: <MedicalInformationIcon />,
-    title: 'Maitri',
+    title: 'Maitri AI',
     link:'https://maitri-ai.streamlit.app/',
     description:
-      'This is an AI based Personalized Menstrual Health Care Recommender to suggest a careplan and answer any queries a women can face during the Menstrual Cycle',
+      'This is Maitri - an AI based Personalized Menstrual Health Care Recommender to suggest a careplan and answer any queries a women can face during the Menstrual Cycle',
     imageLight: 'url("https://i.postimg.cc/kXyd7jVr/maitri.png")',
     
   },
@@ -72,7 +72,7 @@ export default function Features() {
               Your Helping Tools during Menstruation
             </Typography>
             <Typography
-              variant="body1"
+              variant="h6"
               style={{
                   margin: '20px',
                 color: '#242424',
@@ -85,7 +85,7 @@ export default function Features() {
               }}
               
             >
-              Mensa , Maitri and MenstruPedia at your Service Madam !!!!
+              Mensa AI , Maitri AI and MenstruPedia at your Service Madam !!!!
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
@@ -133,10 +133,31 @@ export default function Features() {
               }}
             />
             <Box sx={{ px: 2, pb: 2 }}>
-              <Typography color="text.primary" variant="body2" fontWeight="bold">
+              <Typography  variant="h6"
+           style={{
+            margin:'10px' ,
+             color: '#242424',
+             fontSize: { xs: '32px', sm: '64px' },
+             fontFamily: "Pacifico, cursive",
+             fontWeight: '600',
+             textTransform: 'capitalize',
+             lineHeight: { xs: 1.5, sm: '79.36' },
+             letterSpacing: '0.13',
+             wordWrap: 'break-word',
+           }}>
                 {selectedFeature.title}
               </Typography>
-              <Typography color="text.secondary" variant="body2" sx={{ my: 0.5 }}>
+              <Typography variant="body1"
+            style={{
+                margin: '10px',
+              color: '#242424',
+              fontSize: { xs: '14px', sm: '16px' },
+              fontFamily: 'Jost, sans-serif', 
+              fontWeight: '400',
+              letterSpacing: 0.32,
+              wordWrap: 'break-word',
+              alignContent:'center'
+            }}>
                 {selectedFeature.description}
               </Typography>
               <Link
@@ -146,6 +167,7 @@ export default function Features() {
                 variant="body2"
                 fontWeight="bold"
                 sx={{
+                  margin:'10px',
                   display: 'inline-flex',
                   alignItems: 'center',
                   '& > svg': { transition: '0.2s' },

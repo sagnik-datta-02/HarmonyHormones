@@ -163,7 +163,7 @@ var uiConfig = {
                         fontFamily: "Pacifico, cursive",
                         
                         
-                        letterSpacing: '.2rem',
+                        letterSpacing: '.1rem',
                         color: 'Secendery',
                         textDecoration: 'none',
                         padding: 1.5,
